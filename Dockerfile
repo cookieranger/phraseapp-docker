@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
-ENV VERSION 1.7.4
+ENV VERSION 1.9.4
 
 RUN set -ex \
     && apk add --no-cache ca-certificates
@@ -13,3 +13,4 @@ RUN set -ex \
 	&& apk del .phraseapp-build
 
 ENTRYPOINT [ "/usr/local/bin/phraseapp" ]
+
